@@ -1,0 +1,157 @@
+/* общий сброс */
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Регулирует размеры и отступы, т.е. позволяет браузеру правильно считывать логику (400px значение бокса + 20px отступ =
+    380px внутреннее содержание контента бокса и 20px отступа.*/
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: inherit; /*inherit нужен чтобы присвоить значение от родительского элемента, плюс это необходимо прописывать в начале каждого css*/
+}
+
+button {
+    display: inline-block; /*display: inline-block нужен на линейных элементах, нужен чтобы аттрибуты css блочных элементов правильно работали на 
+    линейных элементов*/
+}
+
+/* Если не указать для input, textarea, button аттрибут font-family: inherit то они не примут стиль текста от body */
+
+a, a:hover{
+    text-decoration: none; /*Делает так чтобы после наведения не подчеркивалась ссылка (не появлялась нижняя полоса под ссылкой)*/
+    color: #000;/*Не позволяет менять цвет ссылки при наведения и после нажатия*/
+}
+
+img {
+    display: block; /*Преобразует тип img в Блочный элемент*/
+    width: 100%; /*Позволяет всегда брать значение от своего родителя то есть 100% ширины от родительского блока*/
+    height: auto;
+}
+
+/* body */
+
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #f7f8ee;
+}
+
+.section {
+    padding-top: 90px;
+    padding-bottom: 133px;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section-header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #bfe1f3;
+}
+.title-1 {
+    font-size: 42px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.text {
+    font-size: 16px;
+}
+
+.product {
+    width: 270px;
+    height: auto;
+    text-align: center;
+}
+.products_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 40px;
+
+    justify-content: center;
+
+}
+
+.product-img{
+    margin-bottom: 12px;
+}
+
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+span{
+    color: red;
+}
+
+button{
+    border: solid 2px red;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    transition: all 0.5s;
+
+}
+button:hover{
+    background-color: rgb(243, 213, 213);
+}
+.button{
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+.wrapper-text{
+
+    padding-right: 20px;
+    margin-bottom: 30px;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.products_wrapper_blog {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+}
+.wrapper-blog {
+    display: flex;
+    justify-content: center;
+
+
+    width: 50%;
+    height:50%;
+
+}
+.img-blog {
+    margin-bottom: 20px;
+    padding-right: 20px;
+
+}
+.img-blog-2 {
+    width: 250px;
+    height: 170px;
+    
+}
+.strelka{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.button-1{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
